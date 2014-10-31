@@ -1,7 +1,3 @@
-body {
-    background-color: #eee;
-    font-family: 'Raleway', sans-serif;
-}
 .input-group {
     margin: 10px;
 }
@@ -11,6 +7,4 @@ body {
 .input-group-addon {
     max-width: 100px;
 }
-.signin-button{
-    
-}
+.signin-button {}

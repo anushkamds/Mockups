@@ -1,9 +1,6 @@
-.dark {
-    background-color: #000;
-}
-.dark2 {
-    background-color: #002;
-}
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
 body {
     background-color: #eee;
+    font-family: 'Raleway', sans-serif;
 }
