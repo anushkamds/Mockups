@@ -1,0 +1,12 @@
+body {
+    background-color: #eee;
+}
+.input-group {
+    margin: 10px;
+}
+.btn-signin {
+    margin: 4px;
+}
+.input-group-addon {
+    max-width: 100px;
+}

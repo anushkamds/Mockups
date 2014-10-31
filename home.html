@@ -35,7 +35,15 @@
                             </li>
                             <li><a href="#">Detail View</a>
                             </li>
-                              <li><a href="#">Users</a>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Management <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Add New Users</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Users</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
@@ -44,9 +52,6 @@
                                     <span class="glyphicon glyphicon-cog" />
                                 </a>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="login-drop">
-                                    <li>
-                                        <a href="#" data-toggle="tooltip" title="" data-original-title="Default tooltip"></a>
-                                    </li>
                                     <li role="presentation">
                                         <a role="menuitem" tabindex="-1" href="#">Profile</a>
                                     </li>
