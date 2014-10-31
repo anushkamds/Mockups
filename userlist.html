@@ -2,10 +2,11 @@
 <html>
 
 <head>
-    <title>Home Page</title>
+    <title>Sign Up</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -29,13 +30,13 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a>
+                            <li><a href="#">Home</a>
                             </li>
                             <li><a href="#">CV Processor</a>
                             </li>
                             <li><a href="#">Detail View</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="active dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Management <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="#">Add New Users</a>
@@ -67,6 +68,41 @@
         </div>
     </header>
     <!--Top Menun Bar END-->
+    <div class="login-panel container">
+        <div class="panel ">
+            <div class="panel-heading">
+                <h3 class="panel-title">List of Users</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Pervilage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kevin Perterson</td>
+                            <td>Admin</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Gerade Pique</td>
+                            <td>User</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Junior Neymar</td>
+                            <td>User</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">

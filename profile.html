@@ -2,10 +2,11 @@
 <html>
 
 <head>
-    <title>Home Page</title>
+    <title>Sign Up</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -23,19 +24,19 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><strong>Warana</strong></a>
+                        <a class="navbar-brand" href="#">Warana</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a>
+                            <li><a href="#">Home</a>
                             </li>
                             <li><a href="#">CV Processor</a>
                             </li>
                             <li><a href="#">Detail View</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="active dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Management <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="#">Add New Users</a>
@@ -67,6 +68,41 @@
         </div>
     </header>
     <!--Top Menun Bar END-->
+    <div class="login-panel container">
+        <div class="panel ">
+            <div class="panel-heading">
+                <h3 class="panel-title">Enter User Details</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-signin" role="form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Name</label>
+                        <input type="text" class="form-control" required="" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" required="" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" required="" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" required="" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">Profile Image</label>
+                        <input type="file" id="exampleInputFile">
+                    </div>
+                    <div class="pull-right">
+                        <button type="submit" class="btn btn-success btn-signin">Save</button>
+                        <button type="button" class="btn btn-default btn-signin">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
