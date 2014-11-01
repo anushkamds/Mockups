@@ -7,6 +7,7 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/signin.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/cvlist.css" rel="stylesheet">
 </head>
 
 <body>
@@ -71,23 +72,105 @@
     <div class="login-panel container">
         <div class="panel ">
             <div class="panel-heading">
-                <h3 class="panel-title">Enter User Details</h3>
+                <h3 class="panel-title">CV Details</h3>
             </div>
             <div class="panel-body">
-                <form class="form-signin" role="form">
-            
-                </form>
+                <!-- Button trigger modal -->
+                <button type="button" class="top-buttons btn btn-warning" data-toggle="modal" disabled="disabled" data-target="#warningModal">
+                    Send Mail
+                </button>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th style="width:10px">
+                                <input type="checkbox" class="top-checkbox">
+                            </th>
+                            <th>Name</th>
+                            <th>Score</th>
+                            <th style="width:210px">Options</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>Kevin Perterson</td>
+                            <td>85%</td>
+                            <td>
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">View</button>
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#warningModal">Send Email</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>Gerade Pique</td>
+                            <td>22%</td>
+                            <td>
+                                <button type="button" class="btn btn-default">View</button>
+                                <button type="button" class="btn btn-warning">Send Email</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>Junior Neymar</td>
+                            <td>54%</td>
+                            <td>
+                                <button type="button" class="btn btn-default">View</button>
+                                <button type="button" class="btn btn-warning">Send Email</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header modal-info">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Detail View of Kevin Perterson</h4>
+                            </div>
+                            <div class="modal-body">
+                               <img src="img/Kurt.jpg" alt="Profile Image" class="img-circle profile-image"> 
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send Mail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Warning Modal-->
+                <div class="modal fade" id="warningModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header modal-warning">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Send Mail</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure you want to send the mail for this candidate?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Send Mail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        });
-    </script>
-
+    <script src="js/cvlist.js"></script>
 </body>
 
 </html>

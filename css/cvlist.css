@@ -1,0 +1,15 @@
+.modal-header {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px
+}
+.modal-header.modal-warning {
+    background-color: #f0ad4e;
+}
+.modal-header.modal-info {
+    background-color: #5bc0de
+}
+.profile-image {
+    width: 140px;
+    height: 140px;
+    margin-left: 50px;
+}
