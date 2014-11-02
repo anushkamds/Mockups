@@ -31,7 +31,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a>
+                            <li><a href="home.html">Home</a>
                             </li>
                             <li class="active"><a href="#">CV Processor</a>
                             </li>
@@ -40,10 +40,10 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Management <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Add New Users</a>
+                                    <li><a href="signin.html">Add New Users</a>
                                     </li>
                                     <li class="divider"></li>
-                                    <li><a href="#">Users</a>
+                                    <li><a href="userlist.html">Users</a>
                                     </li>
                                 </ul>
                             </li>
@@ -55,7 +55,7 @@
                                 </a>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="login-drop">
                                     <li role="presentation">
-                                        <a role="menuitem" tabindex="-1" href="#">Profile</a>
+                                        <a role="menuitem" tabindex="-1" href="profile.html">Profile</a>
                                     </li>
                                     <li role="presentation">
                                         <a role="menuitem" tabindex="-1" href="#">Logout</a>
@@ -72,10 +72,11 @@
     <div class="login-panel container">
         <div class="panel ">
             <div class="panel-heading">
-                <h3 class="panel-title">CV Details</h3>
+                <h3 class="panel-title">CV Details</h3> 
             </div>
             <div class="panel-body">
                 <!-- Button trigger modal -->
+                <p>&#40;Check the first entry&#41;</p>
                 <button type="button" class="top-buttons btn btn-warning" data-toggle="modal" disabled="disabled" data-target="#warningModal">
                     Send Mail
                 </button>
@@ -167,16 +168,41 @@
                                         </li>
                                         <li role="presentation"><a href="#experience" role="tab" data-toggle="tab">Experience</a>
                                         </li>
-                                        <li role="presentation"><a href="#courses" role="tab" data-toggle="tab">Courses</a>
+                                        <li role="presentation"><a href="#publications" role="tab" data-toggle="tab">Publications</a>
                                         </li>
                                     </ul>
                                     <!-- Tab panes -->
                                     <div class="tab-content">
                                         <div role="tabpanel" class="tab-pane active" id="education">
-                                            Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
-                                        <div role="tabpanel" class="tab-pane" id="projects">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
-                                        <div role="tabpanel" class="tab-pane" id="experience">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
-                                        <div role="tabpanel" class="tab-pane" id="courses">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</div>
+                                            <h4>Colorado State University</h4> 
+                                            <h5>PhD, Electrical & Computer Engineering<br><small>2008 &#45; 2012</small></h5>
+                                            <h4>Colorado State University</h4>
+                                            <h5>M.S., Electrical & Computer Engineering<br><small>2007 &#45; 2008</small></h5>
+                                            <h4>University of Moratuwa</h4>
+                                            <h5>BSc Engineering, Computer Science & Engineering<br><small>2000  &#45; 2004</small></h5>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="projects">
+                                            <h4>OBCIE&#58; Ontology&#45;Based Components for Information Extraction</h4>
+                                            <h5>September 2009 &#45; Present</h5>
+                                            <p  class="text-justify">The key ideas here are information extractors, which are components of an information extraction system that make extractions with respect to particular components of an ontology, and platforms for information extraction, which are domain and corpus independent implementations of information extraction techniques. Platforms have been developed for two main information extraction techniques (classification and linguistic extraction rules). Research work is ongoing for developing platforms for other information extraction techniques, using the components developed and developing web services for information extraction extending the concept of platforms for information extraction</p>
+                                            <h4>Sigma-CR: An Ontology and Machine Learning Based Approach for Aggregating Customer Reviews</h4>
+                                            <h5>November 2012 &#45; February 2014</h5>
+                                            <p  class="text-justify">Designed and developed a web-based system for aggregating customer reviews and presenting the summarized information in an easily comprehensible format. The key features of the system are the use of an ontology to formalize the features of the product, rule based information extraction guided by the ontology, performing sentiment analysis on the features extracted from phrases of the reviews and novel user interface techniques.</p>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="experience">
+                                            <h4>Senior Lecturer</h4> 
+                                            <h5>University of Moratuwa<small><br>May 2012 – Present (2 years 7 months)Sri Lanka</small></h5>
+                                            <h4>Software Development Engineer in Test</h4> 
+                                            <h5>Amazon<small><br>January 2011 – April 2012 (1 year 4 months)Greater Seattle Area</small></h5>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="publications">
+                                            <h4>Building a WordNet for Sinhala</h4> 
+                                            <h5>7th International Global WordNet Conference<small><br>January 25, 2014</small></h5>
+                                            <p  class="text-justify">Sinhala is one of the official languages of Sri Lanka and is used by over 19 million people. It belongs to the Indo-Aryan branch of the Indo-European languages and its origins date back to at least 2000 years. It has developed into its current form over a long period of time with influences from a wide variety of languages including Tamil, Portuguese and English. As for any other language, a WordNet is extremely important for Sinhala to take it into the digital era. This paper is based on the project to develop a WordNet for Sinhala based on the English(Princeton) WordNet. It describes how we overcame the challenges in adding Sinhala specific characteristics which were deemed important by Sinhala language experts to the WordNet while keeping the structure of the original English WordNet. It also presents the details of the crowdsourcing system we developed as a part of the project consisting of a NoSQL database in the backend and a web-based frontend. We conclude by discussing the possibility of adapting this architecture for other languages and the road ahead for the Sinhala WordNet and Sinhala NLP</p>
+                                            <h4>Components for information extraction: ontology-based information extractors and generic platforms</h4> 
+                                            <h5>Proceeding of the 19th ACM Conference on Information and Knowledge Management<small><br>2010</small></h5>
+                                            <p  class="text-justify">Information Extraction (IE) has existed as a field for several decades and has produced some impressive systems in the recent past. Despite its success, widespread usage and commercialization remain elusive goals for this field. We identify the lack of effective mechanisms for reuse as one major reason behind this situation. Here, we mean not only the reuse of the same IE technique in different situations but also the reuse of information related to the application of IE techniques (e.g., features used for classification). We have developed a comprehensive component based approach for information extraction that promotes reuse to address this situation. We designed this approach starting from our previous work on the use of multiple ontologies in information extraction. The key ideas of our approach are “information extractors,” which are components of an IE system that make extractions with respect to particular components of an ontology and“platforms for IE,”which aredomain and corpus independent implementations of IE techniques. A case study has shown that this component-based approach can be successfully applied in practical situations.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -194,7 +220,7 @@
                             <div class="modal-header modal-warning">
                                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                                 </button>
-                                <h4 class="modal-title" id="myModalLabel">Send Mail</h4>
+                                <h4 class="modal-title" id="myModalLabel">Warning &#33;</h4>
                             </div>
                             <div class="modal-body">
                                 <p>Are you sure you want to send the mail for this candidate?</p>
